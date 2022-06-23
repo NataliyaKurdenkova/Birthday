@@ -55,7 +55,7 @@ public class DataUtil {
             }
 
             int positionX = (image.getWidth() - metrics.stringWidth(p.getFio())) / 2;
-            int positionY = (image.getHeight() - metrics.getHeight()) / 2 + metrics.getAscent() + 300;
+            int positionY = (image.getHeight() - metrics.getHeight()) / 2 + metrics.getAscent() + 310;
             g.drawString(attributedText.getIterator(), positionX, positionY);
 
             FontMetrics metricsPosition = g.getFontMetrics(fontPosition);
@@ -132,7 +132,7 @@ public class DataUtil {
 
     public static String getCurrentDayAndMonth (){
         Date currentdate = new Date();
-        SimpleDateFormat formatForDay = new SimpleDateFormat("MM-dd");
+        SimpleDateFormat formatForDay = new SimpleDateFormat("dd.MM");
         String d=formatForDay.format(currentdate);
         return d;
 

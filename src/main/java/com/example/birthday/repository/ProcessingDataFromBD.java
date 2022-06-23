@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface ProcessingDataFromBD extends JpaRepository<Person, Long> {
 
-   List<Person> findPersonByBirthdayEndingWith(String date);
+   List<Person> findPersonByBirthdayStartingWith(String date);
 
 
 }

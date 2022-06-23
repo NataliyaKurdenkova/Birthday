@@ -39,7 +39,7 @@ public class BirthdayService {
 
         //3. загрузка фона и данных
         File fileFon = loadPicture();
-        List<Person> personList = processingDataFromBD.findPersonByBirthdayEndingWith(getCurrentDayAndMonth());
+        List<Person> personList = processingDataFromBD.findPersonByBirthdayStartingWith(getCurrentDayAndMonth());
 
 
         //4. накладываем, если имеются данные именинника на картинку-фон
